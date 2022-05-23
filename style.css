@@ -1,6 +1,4 @@
-* {
 
-}
 
 body {
     margin:20px;
@@ -8,7 +6,7 @@ body {
 }
 
 .container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -20,24 +18,23 @@ body {
 
 form {
     padding: 10px;
-    border: 1px solid red;
+    width: 275px;
+    /* border: 1px solid red; */
 }
 
 .box {
     background-color:white;
     color: black;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 150px 150px;
+    grid-column: 1 / span 2;
     border-radius: 1px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: x-small;
-    width:325px;
+
 
 }
 
 input {
-    padding-block-start: 1;
     width:275px;
 }
 ul {
@@ -50,6 +47,11 @@ a {
     color:blue;
 }
 
+.main-box {
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
 #sign-on {
     color:black;
     background-color: rgb(245, 210, 10);
@@ -59,19 +61,16 @@ a {
     height:25px;
     
 }
-#forgot {
-    text-align: end;
-    width:100%;
-}
 
 .a {
     font-size:large;
-    /*width:inherit;*/
-    grid-column: 1 / 2;
+    width:inherit;
+    grid-column: 1 / span 2;
+
 }    
 .b {
     font-size:x-small;
-    grid-column: 1 / 2;
+    -ms-grid-column-span: full;
     
    
 }
@@ -79,13 +78,19 @@ a {
 .c {
     font-size:x-small;
     grid-column-start: 1;
-    border: 2px solid yellow;
-   
+    vertical-align: text-bottom;
+    /* border: 2px solid yellow; */
+    padding: 10px;
+    
 }
 
 .d {
-    font-size:x-small;
+    font-size: x-small;
     grid-column-start: 2;
-    border: 2px solid blue;
+    grid-column-end: 3;
+    /* border: 2px solid blue; */
+    /* width: inherit; */
+    text-align: right;
+    padding: 0px;
 
 }
