@@ -1,4 +1,4 @@
-
+/*Thanks for your help, sir!*/
 
 body {
     margin:20px;
@@ -6,36 +6,35 @@ body {
 }
 
 .container {
-    /* border: 2px solid green; */
     justify-content: center;
     align-items: center;
     align-content: center;
     display:flex;
     background-color: white;
-    padding: 5px;
+    padding: 15px;
     height:100%;
+    font-size: x-small;
+    color: darkgray;
 }
 
 form {
-    padding: 10px;
-    width: 275px;
-    /* border: 1px solid red; */
+    padding-top: 100x;
+    width: 100%;
 }
-
-.box {
-    background-color:white;
+label {
+    padding-bottom: 5px;
+}
+.form-box {
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid lightgray;
+}
+h4 {
     color: black;
-    padding: 10px;
-    grid-column: 1 / span 2;
-    border-radius: 1px;
-    /* border: 1px solid red; */
-    font-size: x-small;
-
-
 }
-
 input {
-    width:275px;
+    width: 100%;
 }
 ul {
     list-style-type:symbols("\25BA");
@@ -47,50 +46,18 @@ a {
     color:blue;
 }
 
-.main-box {
-    border: 1px solid lightgray;
-    display: grid;
-    grid-template-columns: 150px 150px;
+.password-label {
+    display: flex;
+    justify-content: space-between;
 }
+
 #sign-on {
     color:black;
     background-color: rgb(245, 210, 10);
-    width:275px;
+    width:100%;
     border: 1px solid darkgray;
-    font-size:xx-small;
+    font-size:x-small;
     height:25px;
+    padding: 5px;
     
-}
-
-.a {
-    font-size:large;
-    width:inherit;
-    grid-column: 1 / span 2;
-
-}    
-.b {
-    font-size:x-small;
-    -ms-grid-column-span: full;
-    
-   
-}
-
-.c {
-    font-size:x-small;
-    grid-column-start: 1;
-    vertical-align: text-bottom;
-    /* border: 2px solid yellow; */
-    padding: 10px;
-    
-}
-
-.d {
-    font-size: x-small;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    /* border: 2px solid blue; */
-    /* width: inherit; */
-    text-align: right;
-    padding: 0px;
-
 }
